@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.2.0" />
+    <ProjectReference Include="../OrderFlow.Shared/OrderFlow.Shared.csproj" />
+    <ProjectReference Include="../OrderAccumulator.Domain/OrderAccumulator.Domain.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+global using OrderAccumulator.Worker.Fix;
+global using OrderAccumulator.Application.UseCases.ProcessOrder;
+global using OrderAccumulator.Infrastructure.Persistence.Transactions;
+global using OrderGenerator.Application.UseCases;
+global using OrderGenerator.Infrastructure.Persistence.Repositories;
+global using OrderGenerator.Infrastructure.Persistence.Fix;
+global using OrderGeneratorDatabase = OrderGenerator.Infrastructure.Persistence.OrderGeneratorDatabase;
+global using OrderAccumulatorDatabase = OrderAccumulator.Infrastructure.Persistence.OrderAccumulatorDatabase;
+global using OrderGenerator.Api;
+global using OrderGenerator.Worker.Fix;
+global using OrderGenerator.Worker;

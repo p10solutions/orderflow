@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "Npgsql": {
+        "type": "Transitive",
+        "resolved": "10.0.0",
+        "contentHash": "xZAYhPOU2rUIFpV48xsqhCx9vXs6Y+0jX2LCoSEfDFYMw9jtAOUk3iQsCnDLrFIv9NT3JGMihn7nnuZsPKqJmA=="
+      },
+      "QuickFIXn.Core": {
+        "type": "Transitive",
+        "resolved": "1.14.1",
+        "contentHash": "KKIPiQL97MvtUbWC0+iVmSR3vcwuLCSsj2z914t1rV8YaMZtgTc39I1YrQh8mAatJZaikPdbEIKK3dkHxG+l8w=="
+      },
+      "QuickFIXn.FIX44": {
+        "type": "Transitive",
+        "resolved": "1.14.1",
+        "contentHash": "83Msts8cYI9KbKqtHU5QOBB1XcX7mk8m1VvXQfvEaYMg7x2/vjd2NPIsSP+Km9esMTRyuN17M8Is9bmT5g/4qA==",
+        "dependencies": {
+          "QuickFIXn.Core": "1.14.1"
+        }
+      },
+      "orderaccumulator.application": {
+        "type": "Project",
+        "dependencies": {
+          "OrderAccumulator.Domain": "[1.0.0, )"
+        }
+      },
+      "orderaccumulator.domain": {
+        "type": "Project"
+      },
+      "orderaccumulator.infrastructure": {
+        "type": "Project",
+        "dependencies": {
+          "Npgsql": "[10.0.0, )",
+          "OrderAccumulator.Application": "[1.0.0, )",
+          "QuickFIXn.Core": "[1.14.1, )",
+          "QuickFIXn.FIX44": "[1.14.1, )"
+        }
+      }
+    }
+  }
+}

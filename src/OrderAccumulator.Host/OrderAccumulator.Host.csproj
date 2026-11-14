@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+  <PropertyGroup><OutputType>Exe</OutputType><AssemblyName>OrderAccumulator</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../OrderAccumulator.Worker/OrderAccumulator.Worker.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="../OrderAccumulator.Application/OrderAccumulator.Application.csproj" />
+    <ProjectReference Include="../OrderAccumulator.Infrastructure/OrderAccumulator.Infrastructure.csproj" />
+    <Content Include="../../config/FIX44.xml" Link="FIX44.xml" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

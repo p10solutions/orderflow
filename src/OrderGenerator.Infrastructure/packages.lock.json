@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "Npgsql": {
+        "type": "Direct",
+        "requested": "[10.0.0, )",
+        "resolved": "10.0.0",
+        "contentHash": "xZAYhPOU2rUIFpV48xsqhCx9vXs6Y+0jX2LCoSEfDFYMw9jtAOUk3iQsCnDLrFIv9NT3JGMihn7nnuZsPKqJmA=="
+      },
+      "QuickFIXn.Core": {
+        "type": "Direct",
+        "requested": "[1.14.1, )",
+        "resolved": "1.14.1",
+        "contentHash": "KKIPiQL97MvtUbWC0+iVmSR3vcwuLCSsj2z914t1rV8YaMZtgTc39I1YrQh8mAatJZaikPdbEIKK3dkHxG+l8w=="
+      },
+      "QuickFIXn.FIX44": {
+        "type": "Direct",
+        "requested": "[1.14.1, )",
+        "resolved": "1.14.1",
+        "contentHash": "83Msts8cYI9KbKqtHU5QOBB1XcX7mk8m1VvXQfvEaYMg7x2/vjd2NPIsSP+Km9esMTRyuN17M8Is9bmT5g/4qA==",
+        "dependencies": {
+          "QuickFIXn.Core": "1.14.1"
+        }
+      },
+      "FluentValidation": {
+        "type": "Transitive",
+        "resolved": "12.2.0",
+        "contentHash": "DR3lFbdnKucaaj1/8zMNOACMz/64igzox1yVZSFVsLxYB5mxAB+wFP1WZ8fjwrZnbU1KA1DoMzHKYKxUfuZ4wQ=="
+      },
+      "orderflow.shared": {
+        "type": "Project",
+        "dependencies": {
+          "FluentValidation": "[12.2.0, )"
+        }
+      },
+      "ordergenerator.application": {
+        "type": "Project",
+        "dependencies": {
+          "FluentValidation": "[12.2.0, )",
+          "OrderFlow.Shared": "[1.0.0, )",
+          "OrderGenerator.Domain": "[1.0.0, )"
+        }
+      },
+      "ordergenerator.domain": {
+        "type": "Project"
+      }
+    }
+  }
+}
